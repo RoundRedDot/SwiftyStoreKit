@@ -119,7 +119,8 @@ class ViewController: UIViewController {
     func getInfo(_ purchase: RegisteredPurchase) {
 
         NetworkActivityIndicatorManager.networkOperationStarted()
-        SwiftyStoreKit.retrieveProductsInfo([appBundleId + "." + purchase.rawValue]) { result in
+        // SwiftyStoreKit.retrieveProductsInfo([appBundleId + "." + purchase.rawValue]) { result in
+        SwiftyStoreKit.retrieveProductsInfo([purchase.rawValue]) { result in
             NetworkActivityIndicatorManager.networkOperationFinished()
 
             self.showAlert(self.alertForProductRetrievalInfo(result))
@@ -176,6 +177,17 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func offerCode() {
+        if #available(iOS 14, *) {
+            SwiftyStoreKit.redeemOfferCode(atomically: true) { result in
+                print(result)
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        
+    }
+
     func verifyReceipt(completion: @escaping (VerifyReceiptResult) -> Void) {
         
         let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: "your-shared-secret")
@@ -302,6 +314,9 @@ extension ViewController {
             default:
                 return alertWithTitle("Purchase failed", message: (error as NSError).localizedDescription)
             }
+        case .deferred(purchase: let purchase):
+            print("Deferred Purchase: \(purchase.productId)")
+            return nil
         }
     }
 

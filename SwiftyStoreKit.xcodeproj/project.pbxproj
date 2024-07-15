@@ -116,6 +116,10 @@
 		65F7DF8F1DCD524300835D30 /* SwiftyStoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6502F62D1B985C40004E342D /* SwiftyStoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C4FD3A101C2954CD0035CFF3 /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D74BBB1C24CEC90071AD3E /* SwiftyStoreKit.framework */; };
 		C4FD3A111C2954CD0035CFF3 /* SwiftyStoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4D74BBB1C24CEC90071AD3E /* SwiftyStoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFE9963C2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9963B2C4510D20003FC2F /* CodeRedemptionControlller.swift */; };
+		CFE9963D2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9963B2C4510D20003FC2F /* CodeRedemptionControlller.swift */; };
+		CFE9963E2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9963B2C4510D20003FC2F /* CodeRedemptionControlller.swift */; };
+		CFE9963F2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9963B2C4510D20003FC2F /* CodeRedemptionControlller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +255,7 @@
 		A61BF4DD2481F4970017D9BC /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D74BBB1C24CEC90071AD3E /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FD3A011C2954C10035CFF3 /* SwiftyStoreKit_macOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyStoreKit_macOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE9963B2C4510D20003FC2F /* CodeRedemptionControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CodeRedemptionControlller.swift; path = Sources/SwiftyStoreKit/CodeRedemptionControlller.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				2F2B8B2224A64CC000CEF088 /* AppleReceiptValidator.swift */,
+				CFE9963B2C4510D20003FC2F /* CodeRedemptionControlller.swift */,
 				2F2B8B2624A64CC000CEF088 /* CompleteTransactionsController.swift */,
 				2F2B8B2324A64CC000CEF088 /* InAppProductQueryRequest.swift */,
 				2F2B8B2424A64CC000CEF088 /* InAppReceipt.swift */,
@@ -838,6 +844,7 @@
 				2F2B8B6624A64CC100CEF088 /* SwiftyStoreKit.swift in Sources */,
 				2F2B8B4A24A64CC100CEF088 /* PaymentQueueController.swift in Sources */,
 				2F2B8B4224A64CC100CEF088 /* SwiftyStoreKit+Types.swift in Sources */,
+				CFE9963E2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */,
 				2F2B8B4E24A64CC100CEF088 /* InAppReceiptRefreshRequest.swift in Sources */,
 				2F2B8B3224A64CC100CEF088 /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				2F2B8B5A24A64CC100CEF088 /* ProductsInfoController.swift in Sources */,
@@ -870,6 +877,7 @@
 				2F2B8B6424A64CC100CEF088 /* SwiftyStoreKit.swift in Sources */,
 				2F2B8B4824A64CC100CEF088 /* PaymentQueueController.swift in Sources */,
 				2F2B8B4024A64CC100CEF088 /* SwiftyStoreKit+Types.swift in Sources */,
+				CFE9963C2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */,
 				2F2B8B4C24A64CC100CEF088 /* InAppReceiptRefreshRequest.swift in Sources */,
 				2F2B8B3024A64CC100CEF088 /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				2F2B8B5824A64CC100CEF088 /* ProductsInfoController.swift in Sources */,
@@ -920,6 +928,7 @@
 				2F2B8B6724A64CC100CEF088 /* SwiftyStoreKit.swift in Sources */,
 				2F2B8B4B24A64CC100CEF088 /* PaymentQueueController.swift in Sources */,
 				2F2B8B4324A64CC100CEF088 /* SwiftyStoreKit+Types.swift in Sources */,
+				CFE9963F2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */,
 				2F2B8B4F24A64CC100CEF088 /* InAppReceiptRefreshRequest.swift in Sources */,
 				2F2B8B3324A64CC100CEF088 /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				2F2B8B5B24A64CC100CEF088 /* ProductsInfoController.swift in Sources */,
@@ -942,6 +951,7 @@
 				2F2B8B6524A64CC100CEF088 /* SwiftyStoreKit.swift in Sources */,
 				2F2B8B4924A64CC100CEF088 /* PaymentQueueController.swift in Sources */,
 				2F2B8B4124A64CC100CEF088 /* SwiftyStoreKit+Types.swift in Sources */,
+				CFE9963D2C4510D20003FC2F /* CodeRedemptionControlller.swift in Sources */,
 				2F2B8B4D24A64CC100CEF088 /* InAppReceiptRefreshRequest.swift in Sources */,
 				2F2B8B3124A64CC100CEF088 /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				2F2B8B5924A64CC100CEF088 /* ProductsInfoController.swift in Sources */,
@@ -1194,7 +1204,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftyStoreKit-iOS-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.SwiftyStoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1210,7 +1220,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftyStoreKit-iOS-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.SwiftyStoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
